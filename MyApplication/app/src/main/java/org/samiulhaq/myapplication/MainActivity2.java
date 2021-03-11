@@ -15,17 +15,15 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
-
-    public void ShowWebsite(View view) {
-        Uri uri = Uri.parse("http://www.pucit.edu.pk");
-        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-        startActivity(intent);
-    }
-
     public void Call(View view) {
         Uri uri = Uri.parse("tel:+92334037449");
         Intent intent = new Intent(Intent.ACTION_DIAL,uri);
         startActivity(intent);
 
+    }
+    public void ShowWebsite(View view) {
+        Uri uri = Uri.parse("http://www.pucit.edu.pk");
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(intent);
     }
 }
